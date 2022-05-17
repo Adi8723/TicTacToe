@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Tic Tac Toe</title>
+</head>
+<body>
+	<img class="gameOver d-none" id="gameOver" src="game-over.png" alt="">
+	<button class="restartBtn d-none" id="restartBtn" onclick="reStart()">restart</button>
+	<div class="player">
+		<div class="playerInaktiv" id="player1">
+			<img src="circle.png" alt="">player1
+		</div>
+
+		<div id="player2">
+			<img src="cross.png" alt="">player2
+
+		</div>
+	</div>
+	
+	<div id="line-0" class="horizontalLine" style="top: 400px;"></div>
+	<div id="line-1" class="horizontalLine" style="top: 540px;" ></div>
+	<div id="line-2" class="horizontalLine" style="top:680px;"></div>
+
+<div id="line-3" class="horizontalLine verticalLine1" style="top: 490px;"></div>
+
+<div id="line-4" class="horizontalLine verticalLine2" style=" top: 490px;"></div>
+
+<div id="line-5" class="horizontalLine verticalLine3" style="top: 490px;"></div>
+
+
+
+<div id="line-6" class="horizontalLine querLine" style="top: 540px; transform: rotate(45deg) scaleY(0.0)"></div>
+
+<div id="line-7" class="horizontalLine querLine" style="top: 540px; transform: rotate(-45deg) scaleY(0.0)"></div>
+
+
+
+	<table>
+		<tr>
+			<td onclick="fillShape(0)">
+				<img id="circle-0" class="circle d-none" src="circle.png" alt="">
+				<img id="cross-0" class="cross d-none" src="cross.png" alt="">
+			</td>
+			<td onclick="fillShape(1)">
+				<img id="circle-1" class="circle d-none" src="circle.png" alt="">
+				<img id="cross-1" class="cross d-none" src="cross.png" alt="">
+			</td>
+			<td onclick="fillShape(2)">
+				<img id="circle-2" class="circle d-none" src="circle.png" alt="">
+				<img id="cross-2" class="cross d-none" src="cross.png" alt="">
+			</td>
+		</tr>
+		<tr>
+			<td onclick="fillShape(3)">
+				<img id="circle-3" class="circle d-none" src="circle.png" alt="">
+				<img id="cross-3" class="cross d-none" src="cross.png" alt="">
+			</td>
+			<td onclick="fillShape(4)">
+				<img id="circle-4" class="circle d-none" src="circle.png" alt="">
+				<img id="cross-4" class="cross d-none" src="cross.png" alt="">
+			</td>
+			<td onclick="fillShape(5)">
+				<img id="circle-5" class="circle d-none" src="circle.png" alt="">
+				<img id="cross-5" class="cross d-none" src="cross.png" alt="">
+			</td>
+		</tr>
+		<tr>
+			<td onclick="fillShape(6)">
+				<img id="circle-6" class="circle d-none" src="circle.png" alt="">
+				<img id="cross-6" class="cross d-none" src="cross.png" alt="">
+			</td>
+			<td onclick="fillShape(7)">
+				<img id="circle-7" class="circle d-none" src="circle.png" alt="">
+				<img id="cross-7" class="cross d-none" src="cross.png" alt="">
+			</td>
+			<td onclick="fillShape(8)">
+				<img id="circle-8" class="circle d-none" src="circle.png" alt="">
+				<img id="cross-8" class="cross d-none" src="cross.png" alt="">
+			</td>
+		</tr>
+	</table>
+
+	<script src="script.js"></script>
+</body>
+</html>
